@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transitions & Responsive Images</title>
+  <link rel="stylesheet" href="components.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive Components</h1>
+  </header>
+
+  <!-- Button with hover/focus micro-interaction -->
+  <button class="btn">Hover Me</button>
+
+  <!-- Card with hover scale effect -->
+    <div class="card">
+    <h2>Card Title</h2>
+    <p>This card grows slightly on hover.</p>
+  </div>
+
+  <!-- Responsive Image -->
+  <section>
+    <h2>Responsive Image Example</h2>
+    <img 
+      src="image/img-medium.jpg" 
+      srcset="
+        image/img-small.jpg 480w,
+        image/img-medium.jpg 768w,
+        image/img-large.jpg 1200w"
+      sizes="(max-width: 600px) 480px, 
+             (max-width: 1000px) 768px, 
+             1200px"
+      alt="Beautiful landscape">
+  </section>
+</body>
+</html>
