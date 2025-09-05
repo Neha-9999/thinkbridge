@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Student Information Form</title>
+<style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h2 { text-align: center; }
+    form { max-width: 800px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; }
+    .row { display: flex; gap: 10px; margin-bottom: 10px; align-items: center; }
+    input, select, button { padding: 5px; }
+    .remove-btn { background: red; color: white; border: none; padding: 5px 10px; cursor: pointer; }
+    .add-btn { background: green; color: white; border: none; padding: 5px 10px; cursor: pointer; }
+    .submit-btn { background: blue; color: white; padding: 8px 15px; border: none; cursor: pointer; margin-top: 10px; }
+</style>
+</head>
+<body>
+    <script src="dom.js"></script>
+<h2>Student Information Form</h2>
+<form id="studentForm">
+    <label>Full Name: </label>
+    <input type="text" id="fullName" required placeholder="Enter full name"><br><br>
+
+    <label>Roll Number: </label>
+    <input type="text" id="rollNumber" required placeholder="ABCD1234E"><br><br>
+
+    <h3>Subjects</h3>
+    <div id="subjectsContainer"></div>
+    <button type="button" class="add-btn" onclick="addSubjectRow()">Add More Subject</button><br><br>
+
+    <button type="submit" class="submit-btn">Submit</button>
+</form>
+
+
+</body>
+</html>

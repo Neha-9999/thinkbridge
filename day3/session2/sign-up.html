@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        margin-left: 10pc;
+        margin-right: 10pc;
+      }
+      form {
+        max-width: 400px;
+        margin: auto;
+
+        background-color: white;
+      }
+      label {
+        display: block;
+        margin-top: 15px;
+      }
+      input {
+        width: 100%;
+        padding: 12px 10px;
+        margin-top: 5px;
+        font-size: 1rem;
+        border: 1px solid black;
+        box-sizing: border-box;
+        font-size: 16px;
+        border-radius: 10px;
+      }
+      button {
+        background: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        width: 50%;
+        margin-top: 15px;
+        padding: 10px;
+        border-radius: 10px;
+        margin-left: 20%;
+        margin-right: 10%;
+      }
+      button:focus,
+      input:focus {
+        outline: 3px solid #ff9800; /* visible focus for keyboard users */
+      }
+      img {
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+        text-align: center;
+        /* border: 1px solid black; */
+      }
+      p {
+        text-align: center;
+      }
+
+      #form-container {
+        background-color: white;
+        padding: 24px 40px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.19);
+      }
+      .icon-container {
+        text-align: center;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div>
+      
+      <div id="form-container">
+        <form>
+          <div class="icon-container">
+            <h3>Signup with the services</h3>
+
+            <img src="/icons/google.png" alt="google" />
+            <img src="/icons/linkedin.png" alt="linkedin" />
+            <img src="/icons/facebook.png" alt="facebook" />
+          </div>
+          <p id="divider">or</p>
+          <!-- Name -->
+
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            class="name"
+            name="name"
+            placeholder="Enter first name"
+            required
+            aria-required="true"
+          />
+
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            class="name"
+            name="name"
+            placeholder="Enter last name"
+            required
+            aria-required="true"
+          />
+
+          <!-- Email -->
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@email.com"
+            required
+            aria-required="true"
+          />
+
+          <!-- Password -->
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Minimum 8 characters"
+            minlength="8"
+            required
+            aria-required="true"
+          />
+
+          <!-- Submit -->
+          <button type="submit">Sign Up</button>
+         
+      </div>
+    </div>
+  </body>
+</html>
