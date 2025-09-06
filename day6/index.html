@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Telerik - Home</title>
+    <link rel="stylesheet" href="web.css" />
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container">
+        <a href="#" class="logo" aria-label="Progress Telerik Homepage">
+          <span>Progress</span><span class="telerik">Solution.</span>
+        </a>
+        <button
+          class="hamburger"
+          id="hamburgerBtn"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="navbarMenu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="navbarMenu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Languages</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Support & Learning</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header class="hero" role="banner">
+      <img
+        src="images/discussing-developers.jpg"
+        alt="Two professionals discussing in an office"
+        class="hero-img"
+      />
+      <div class="hero-overlay">
+        <h1>Develop Intelligence</h1>
+        <p>
+          HTML5, CSS, JavaScript, GIT web application development with
+          front-end and back-end technologies.
+        </p>
+      </div>
+    </header>
+    <main>
+      <section class="products" aria-label="Product categories">
+        <div class="cards">
+          <div class="card">
+            <div class="cat-label net">HTML</div>
+            <!-- <h2>DevCraft™</h2> -->
+            <p>In this guide, we learn the basics of HTML, which includes HTML tags ( &lt;h1&gt;, &lt;p&gt;, &lt;img&gt;, etc), attributes, elements, and document structure which collectively form a working web page</p>
+            <a href="#" class="btn green" role="button">Learn more</a>
+          </div>
+          <div class="card">
+            <div class="cat-label mobile">CSS</div>
+            <!-- <h2>NativeScript™</h2> -->
+            <p>CSS stands for Cascading Style Sheets. It is a stylesheet language used to style and enhance website presentation. CSS is one of the three main components of a webpage, along with HTML and JavaScript.</p>
+            <a href="#" class="btn blue" role="button">Learn more</a>
+          </div>
+          <div class="card">
+            <div class="cat-label html5">JavaScript</div>
+            <!-- <h2>Kendo UI®</h2> -->
+            <p>
+              JavaScript is a programming language used to create dynamic content for websites. It is a lightweight, cross-platform, and single-threaded programming language. It's an interpreted language that executes code line by line, providing more flexibility.
+            </p>
+            <a href="#" class="btn red" role="button">Learn more</a>
+          </div>
+        </div>
+      </section>
+      <section class="signup" aria-label="Signup Form">
+        <form aria-label="Request a Free Trial" autocomplete="on" novalidate>
+          <label for="email"
+            >Email Address:<span aria-hidden="true">*</span></label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            aria-required="true"
+            aria-label="Email Address"
+          />
+          <button type="submit" class="btn green">Request Free Trial</button>
+        </form>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
