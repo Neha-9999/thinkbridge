@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Progress Solution</title>
+  <link rel="stylesheet" href="web.css" />
+</head>
+<body>
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="#" class="logo" aria-label="Progress Telerik Homepage">
+        <span>Progress</span><span class="telerik">Solution.</span>
+      </a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navbarMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navbarMenu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Languages</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Support & Learning</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+  </nav>
+  <header class="hero" role="banner">
+    <img src="images/discussing-developers.jpg" alt="Two professionals discussing in an office" class="hero-img" />
+    <div class="hero-overlay">
+      <h1>Develop Intelligence</h1>
+      <p>Building web applications with advanced capabilities</p>
+    </div>
+  </header>
+  <main>
+    <section class="products" aria-label="Product categories">
+      <div class="cards">
+        <div class="card">
+          <div class="cat-label net">HTML5</div>
+          
+          <p>HTML (HyperText Markup Language) is the standard language used to create the structure of web pages. It defines elements like headings, paragraphs, images, links, forms, and more. HTML provides the skeleton of a website, which is then styled with CSS and made interactive with JavaScript.</p>
+          <a href="#" class="btn green" role="button" onclick="window.open('https://www.geeksforgeeks.org/html/html-tutorial/', '_blank')">Learn more</a>
+        </div>
+        <div class="card">
+          <div class="cat-label mobile">CSS</div>
+         
+          <p>CSS (Cascading Style Sheets) is a stylesheet language used to control the look and layout of web pages. It works with HTML to define colors, fonts, spacing, positioning, and responsive design. With CSS, you can make web pages visually attractive, consistent, and adaptable across devices.</p>
+          <a href="#" class="btn blue" role="button" onclick="window.open('https://www.geeksforgeeks.org/css/css-tutorial/', '_blank')">Learn more</a>
+        </div>
+        <div class="card">
+          <div class="cat-label html5">JavaScript</div>
+          
+          <p>JavaScript (JS) is a lightweight, high-level programming language used to make web pages interactive and dynamic. It runs directly in the browser, allowing developers to add features like animations, form validation, interactive buttons, and real-time updates. Along with HTML and CSS , javascript</p>
+          <a href="#" class="btn red" role="button" onclick="window.open('https://www.geeksforgeeks.org/javascript/javascript-tutorial/', '_blank')">Learn more</a>
+        </div>
+      </div>
+    </section>
+    <section class="signup" aria-label="Signup Form">
+  <form aria-label="Request a Free Trial" autocomplete="on" novalidate onsubmit="showModal(event)">
+        <label for="email">Email Address:<span aria-hidden="true">*</span></label>
+        <input type="email" id="email" name="email" required aria-required="true" aria-label="Email Address" />
+        <button type="submit" class="btn green">Request Free Trial</button>
+      </form>
+      <div id="modal" class="modal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.5);justify-content:center;align-items:center;z-index:1000;">
+        <div style="background:#fff;padding:2rem;border-radius:8px;max-width:90vw;text-align:center;">
+          <h2>Thank you for registering!</h2>
+          <p>We have received your request for a free trial.</p>
+          <button onclick="closeModal()" class="btn green">Close</button>
+        </div>
+      </div>
+      </form>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
